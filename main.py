@@ -12,7 +12,8 @@ app = Dash(external_stylesheets=external_stylesheets)
 
 # App layout
 app.layout = [
-    html.Div(children='My First App with Data, Graph, and Controls'),
+    html.Div(className='row', children='My First App with Data, Graph, and Controls',
+             style={'textAlign':'center', 'color':'blue', 'fontSize':30}),
     html.Hr(),
     dcc.RadioItems(options=['pop', 'lifeExp', 'gdpPercap',], value='lifeExp', id='controls-and-radio-item'),
     dash_table.DataTable(data=df.to_dict('records'), page_size=6), #default page size is 10 
