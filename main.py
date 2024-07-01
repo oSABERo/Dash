@@ -23,7 +23,7 @@ app.layout = [
     
     html.Div(className='row', children=[
         html.Div(className='six columns', children=[
-            dash_table.DataTable(data=df.to_dict('recodes'), page_size=11, style_table={'overflowX':'auto'})
+            dash_table.DataTable(data=df.to_dict('records'), page_size=11, style_table={'overflowX':'auto'})
         ]),
         html.Div(className='six columns', children=[
             dcc.Graph(figure={}, id='histo-chart-final')
