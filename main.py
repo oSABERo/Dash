@@ -6,8 +6,9 @@ import plotly.express as px
 # Incorporate data
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminder2007.csv')
 
-# Initialize the app
-app = Dash()
+# Initialize the app - incorporate css
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+app = Dash(external_stylesheets=external_stylesheets)
 
 # App layout
 app.layout = [
