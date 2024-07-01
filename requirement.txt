@@ -1,3 +1,4 @@
 # Use "pip install -r requirements.txt " if using windows
 
 Dash==2.17.1
+pandas
