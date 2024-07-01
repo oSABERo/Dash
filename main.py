@@ -13,7 +13,7 @@ app = Dash()
 app.layout = [
     html.Div(children='My First App with Data, Graph, and Controls'),
     html.Hr(),
-    dcc.RadioItem(options=['pop', 'lifeExp', 'gdpPercap',], value='lifeExp', id='controls-and-radio-item'),
+    dcc.RadioItems(options=['pop', 'lifeExp', 'gdpPercap',], value='lifeExp', id='controls-and-radio-item'),
     dash_table.DataTable(data=df.to_dict('records'), page_size=6), #default page size is 10 
     dcc.Graph(figure={}, id='controls-and-graph')
 ]
