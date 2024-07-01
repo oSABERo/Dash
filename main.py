@@ -14,8 +14,9 @@ app = Dash(external_stylesheets=external_stylesheets)
 app.layout = [
     html.Div(className='row', children='My First App with Data, Graph, and Controls',
              style={'textAlign':'center', 'color':'blue', 'fontSize':30}),
+    
     html.Div(className='row', children=[
-        dcc.RadioItems(options=['pop', 'lifeRxp', 'gdpPercap'],
+        dcc.RadioItems(options=['pop', 'lifeExp', 'gdpPercap'],
                        value='lifeExp',
                        inline=True,
                        id='my-radio-buttons-final')
