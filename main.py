@@ -33,7 +33,7 @@ app.layout = [
 
 # Add controls to build the interaction
 @callback(
-    Output(component_id='-histo-chart-final', component_property='figure'),
+    Output(component_id='histo-chart-final', component_property='figure'),
     Input(component_id='my-radio-buttons-final', component_property='value')
 )
 def update_graph(col_chosen):
